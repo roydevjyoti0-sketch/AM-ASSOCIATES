@@ -182,27 +182,6 @@
             .testimonial-slide p.text-2xl {
                 font-size: clamp(1.2rem, 4.5vw, 1.8rem) !important;
             }
-            .faq-item summary {
-                padding: 0.9rem 0.85rem;
-            }
-            .faq-item summary span:first-child {
-                font-size: 0.78rem;
-                line-height: 1.45;
-            }
-            .faq-item .faq-plus {
-                width: 1.5rem;
-                height: 1.5rem;
-                font-size: 1rem;
-            }
-            .faq-answer {
-                padding: 0 0.85rem 0.9rem;
-                font-size: 0.8rem;
-            }
-            .faq-answer p,
-            .faq-answer .text-sm {
-                font-size: 0.78rem !important;
-                line-height: 1.7;
-            }
         }
 
         @keyframes statsReveal {
@@ -245,77 +224,6 @@
             gap: 1rem;
             z-index: 50;
             align-items: center;
-        }
-
-        .faq-item {
-            background: #ffffff;
-            border: 1px solid rgba(10, 17, 40, 0.1);
-            border-left: 4px solid #d4af37;
-            box-shadow: 0 3px 10px rgba(10, 17, 40, 0.03);
-            transition: all 0.2s ease;
-        }
-        .faq-item:hover {
-            box-shadow: 0 8px 20px rgba(10, 17, 40, 0.06);
-            border-color: rgba(10, 17, 40, 0.15);
-        }
-        .faq-item summary {
-            list-style: none;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1rem;
-            cursor: pointer;
-            padding: 1.05rem 1.2rem;
-            color: #0a1128;
-            background: rgba(249, 246, 240, 0.5);
-        }
-        .faq-item summary::-webkit-details-marker {
-            display: none;
-        }
-        .faq-item summary::marker {
-            display: none;
-        }
-        .faq-item summary span:first-child {
-            flex: 1;
-            line-height: 1.5;
-            font-size: 0.93rem;
-            font-weight: 700;
-            letter-spacing: 0.01em;
-        }
-        .faq-plus {
-            flex-shrink: 0;
-            width: 1.8rem;
-            height: 1.8rem;
-            border-radius: 9999px;
-            background: #0a1128;
-            color: #f9f6f0;
-            font-size: 1.2rem;
-            line-height: 1;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.2s ease;
-        }
-        .faq-item[open] {
-            border-left-color: #d4af37;
-            background: #fff;
-        }
-        .faq-item[open] .faq-plus {
-            transform: rotate(45deg);
-            background: #d4af37;
-            color: #0a1128;
-        }
-        .faq-answer {
-            padding: 0 1.2rem 1.2rem;
-            color: #4b5563;
-            line-height: 1.8;
-            font-size: 0.92rem;
-            border-top: 1px solid rgba(10, 17, 40, 0.08);
-            background: #ffffff;
-        }
-        .faq-question-mark {
-            color: #d4af37;
-            font-weight: 800;
         }
         
         @media (max-width: 640px) {
@@ -414,11 +322,11 @@
             </p>
             
             <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-8 md:mb-16 w-full px-4 sm:px-0" data-aos="fade-up" data-aos-delay="300">
-                <a href="mailto:lexresource@gmail.com" class="inline-flex items-center justify-center bg-gradient-to-r from-gold-500 to-[#c7a63c] hover:from-[#c7a63c] hover:to-gold-500 text-navy-900 px-8 py-3.5 md:py-3 text-xs md:text-sm font-bold tracking-wider transition shadow-lg w-full sm:w-auto cursor-pointer select-none">
+                <a href="mailto:lexresource@gmail.com" class="bg-[#25D366] hover:bg-[#1ebe5b] text-white px-8 py-3.5 md:py-3 text-xs md:text-sm font-bold tracking-wider transition flex items-center justify-center shadow-lg w-full sm:w-auto">
                     <svg class="w-5 h-5 mr-2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
                     EMAIL US <span class="ml-2">→</span>
                 </a>
-                <a href="mailto:lexresource@gmail.com" class="border border-gray-500 hover:border-gold-500 text-white px-8 py-3.5 md:py-3 text-xs md:text-sm font-bold tracking-wider transition w-full sm:w-auto flex items-center justify-center cursor-pointer">
+                <a href="#practice-areas" class="border border-gray-500 hover:border-gold-500 text-white px-8 py-3.5 md:py-3 text-xs md:text-sm font-bold tracking-wider transition w-full sm:w-auto flex items-center justify-center">
                     OUR PRACTICE AREAS
                 </a>
             </div>
@@ -748,172 +656,64 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
+    <!-- Insights Section with Images -->
     <section id="insights" class="py-16 md:py-24 bg-cream border-t border-gray-200">
         <div class="container mx-auto max-w-6xl px-4">
             <div class="text-center mb-12 md:mb-16" data-aos="fade-up">
                 <p class="text-gold-500 text-xs font-bold tracking-[0.2em] uppercase mb-4">Knowledge</p>
-                <h2 class="text-4xl font-serif text-navy-900 mb-6">LEGAL QUESTIONS &amp; FREQUENTLY ASKED QUESTIONS (FAQs)</h2>
+                <h2 class="text-4xl font-serif text-navy-900 mb-6">Insights & Updates</h2>
                 <div class="w-10 h-1 bg-gold-500 mx-auto mb-6 rounded"></div>
+                <p class="text-gray-600 text-sm max-w-2xl mx-auto">Plain-language notes on the legal questions our clients ask us most.</p>
             </div>
-
-            <div class="max-w-5xl mx-auto">
-                <details class="faq-item faq-main" data-aos="fade-up">
-                    <summary>
-                        <span>LEGAL QUESTIONS &amp; FREQUENTLY ASKED QUESTIONS (FAQs)</span>
-                        <span class="faq-plus">+</span>
-                    </summary>
-                    <div class="faq-answer faq-answer-main">
-                        <div class="space-y-8 pt-4">
-                            <div class="bg-cream/40 border border-gray-200 p-5 md:p-6">
-                                <h3 class="text-xl md:text-2xl font-serif font-bold text-navy-900 mb-5 uppercase tracking-wide">1. GENERAL LEGAL ASSISTANCE</h3>
-                                <div class="space-y-4 text-gray-700">
-                                    <div>
-                                        <p class="text-sm font-bold text-navy-900 mb-2">Q1. What legal matters does Asoke Majumdar &amp; Associates - Lexresource handle?</p>
-                                        <p class="text-sm leading-relaxed">Asoke Majumdar &amp; Associates - Lexresource handles matrimonial disputes, civil and criminal cases, property matters, arbitration, probate, succession, legal drafting, and suitable High Court proceedings, subject to the law and jurisdiction that apply.</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm font-bold text-navy-900 mb-2">Q2. What documents should I bring to a legal consultation?</p>
-                                        <p class="text-sm leading-relaxed">Bring any relevant agreements, notices, court orders, letters or emails, identity documents, and other records connected with your matter. The documents needed may differ depending on the jurisdiction and type of proceeding.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-cream/40 border border-gray-200 p-5 md:p-6">
-                                <h3 class="text-xl md:text-2xl font-serif font-bold text-navy-900 mb-5 uppercase tracking-wide">2. MATRIMONIAL &amp; FAMILY LAW</h3>
-                                <div class="space-y-4 text-gray-700">
-                                    <div>
-                                        <p class="text-sm font-bold text-navy-900 mb-2">Q1. Do you handle divorce and matrimonial cases in Kolkata?</p>
-                                        <p class="text-sm leading-relaxed">Yes, as an experienced matrimonial lawyer, we handle divorce by mutual consent, contested divorce, maintenance, domestic violence, and child custody matters with complete confidentiality.</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm font-bold text-navy-900 mb-2">Q2. How long does mutual divorce take in Kolkata?</p>
-                                        <p class="text-sm leading-relaxed">A mutual consent divorce typically takes around 6-9 months, depending on the applicable legal requirements, the court's diary, and the dates permitted by the court. We assist with the preparation of documentation, drafting and filing the joint petition, and court appearances as required.</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm font-bold text-navy-900 mb-2">Q3. What is the difference between mutual and contested divorce?</p>
-                                        <p class="text-sm leading-relaxed">In a mutual-consent divorce, both spouses agree to the divorce. In a contested divorce, the spouses disagree about the divorce or related issues, or one spouse does not give joint consent. The grounds, process, and legal terms may differ under the law that applies in the relevant jurisdiction.</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm font-bold text-navy-900 mb-2">Q4. Can I enforce a maintenance order?</p>
-                                        <p class="text-sm leading-relaxed">Yes. The steps for enforcing a maintenance order depend on the applicable law, jurisdiction, and terms of the order.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-cream/40 border border-gray-200 p-5 md:p-6">
-                                <h3 class="text-xl md:text-2xl font-serif font-bold text-navy-900 mb-5 uppercase tracking-wide">3. PROPERTY &amp; REAL ESTATE</h3>
-                                <div class="space-y-4 text-gray-700">
-                                    <div>
-                                        <p class="text-sm font-bold text-navy-900 mb-2">Q1. What documents should I verify before purchasing property?</p>
-                                        <p class="text-sm leading-relaxed">Check the title deeds, ownership records, details of any encumbrances, approved plans where required, and relevant registration documents. The records and checks required may differ depending on the location.</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm font-bold text-navy-900 mb-2">Q2. Does property mutation establish ownership?</p>
-                                        <p class="text-sm leading-relaxed">No. Mutation is generally an entry in revenue or municipal records. By itself, it does not prove legal ownership or title. Its legal effect and the procedure for obtaining it may differ by jurisdiction.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-cream/40 border border-gray-200 p-5 md:p-6">
-                                <h3 class="text-xl md:text-2xl font-serif font-bold text-navy-900 mb-5 uppercase tracking-wide">4. CIVIL &amp; CRIMINAL LITIGATION</h3>
-                                <div class="space-y-4 text-gray-700">
-                                    <div>
-                                        <p class="text-sm font-bold text-navy-900 mb-2">Q1. What should I do after receiving a court summons?</p>
-                                        <p class="text-sm leading-relaxed">Check the hearing date and any instructions in the summons, keep all related documents safe, and seek legal advice promptly. The required response and deadlines depend on the court and jurisdiction.</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm font-bold text-navy-900 mb-2">Q2. Can I seek an injunction in a property dispute?</p>
-                                        <p class="text-sm leading-relaxed">Possibly. Whether an injunction is available depends on the facts, evidence, legal requirements, and the court's jurisdiction.</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm font-bold text-navy-900 mb-2">Q3. Is bail available in every criminal case?</p>
-                                        <p class="text-sm leading-relaxed">Bail is not automatic in every case. It depends on the offence, applicable law, facts of the case, and jurisdiction. The procedure and legal terms may differ by location.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-cream/40 border border-gray-200 p-5 md:p-6">
-                                <h3 class="text-xl md:text-2xl font-serif font-bold text-navy-900 mb-5 uppercase tracking-wide">5. HIGH COURT &amp; WRIT JURISDICTION</h3>
-                                <div class="space-y-4 text-gray-700">
-                                    <div>
-                                        <p class="text-sm font-bold text-navy-900 mb-2">Q1. What is a writ petition?</p>
-                                        <p class="text-sm leading-relaxed">A writ petition asks a court with the proper authority to grant a legal remedy. It must meet the court's jurisdictional and procedural requirements and comply with applicable law. The types of writs and related terms may differ by jurisdiction.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-cream/40 border border-gray-200 p-5 md:p-6">
-                                <h3 class="text-xl md:text-2xl font-serif font-bold text-navy-900 mb-5 uppercase tracking-wide">6. ARBITRATION &amp; NEGOTIABLE INSTRUMENTS</h3>
-                                <div class="space-y-4 text-gray-700">
-                                    <div>
-                                        <p class="text-sm font-bold text-navy-900 mb-2">Q1. Can an arbitration award be challenged?</p>
-                                        <p class="text-sm leading-relaxed">Yes, but only on grounds recognised by law and within the applicable legal time limits. The grounds, procedure, and deadlines depend on the governing law and jurisdiction.</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm font-bold text-navy-900 mb-2">Q2. What can I do if a cheque is dishonoured?</p>
-                                        <p class="text-sm leading-relaxed">Section 138 of the Negotiable Instruments Act, 1881, may provide a remedy if all statutory requirements are met and the matter falls within the relevant jurisdiction. Notice requirements, time limits, and procedures may differ under the governing law and depending on the location.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-cream/40 border border-gray-200 p-5 md:p-6">
-                                <h3 class="text-xl md:text-2xl font-serif font-bold text-navy-900 mb-5 uppercase tracking-wide">7. SUCCESSION &amp; LEGAL DOCUMENTATION</h3>
-                                <div class="space-y-4 text-gray-700">
-                                    <div>
-                                        <p class="text-sm font-bold text-navy-900 mb-2">Q1. What is probate of a Will?</p>
-                                        <p class="text-sm leading-relaxed">Probate is a court order or grant relating to a Will, where the law provides for it and requires it. Whether probate is needed and how to obtain it may differ by jurisdiction.</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm font-bold text-navy-900 mb-2">Q2. What is a Succession Certificate?</p>
-                                        <p class="text-sm leading-relaxed">A Succession Certificate is issued by a court and mainly relates to specified debts and securities belonging to a deceased person. Its scope, availability, and procedure may differ under the law applicable in the relevant jurisdiction.</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm font-bold text-navy-900 mb-2">Q3. Can an advocate draft deeds, agreements, and Wills?</p>
-                                        <p class="text-sm leading-relaxed">Yes. An advocate may help prepare these documents based on the transaction, the client's instructions, and applicable law. The required formalities, signing requirements, and registration procedures may differ by location.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-cream/40 border border-gray-200 p-5 md:p-6">
-                                <h3 class="text-xl md:text-2xl font-serif font-bold text-navy-900 mb-5 uppercase tracking-wide">8. CONSULTATION &amp; FEES</h3>
-                                <div class="space-y-4 text-gray-700">
-                                    <div>
-                                        <p class="text-sm font-bold text-navy-900 mb-2">Q1. How are legal fees determined?</p>
-                                        <p class="text-sm leading-relaxed">Fees depend on the type, complexity, and scope of the work, the jurisdiction involved, and the terms agreed with the advocate.</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm font-bold text-navy-900 mb-2">Q2. Can an advocate guarantee the outcome of a case?</p>
-                                        <p class="text-sm leading-relaxed">No. The result of a case depends on the facts, evidence, applicable law, jurisdiction, and the court's decision.</p>
-                                    </div>
-                                </div>
-                                <div class="mt-6 border-t border-gray-200 pt-6">
-                                    <p class="text-sm leading-relaxed text-gray-700"><strong class="font-bold text-navy-900">DISCLAIMER:</strong> These FAQs provide general legal information only. They do not constitute legal advice or create an advocate-client relationship. Each matter requires individual assessment. Procedures, terminology, deadlines, and legal requirements may vary by jurisdiction and location; obtain specific advice for the relevant court or authority.</p>
-                                </div>
-                            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Insight 1 -->
+                <div class="bg-white hover:shadow-xl transition flex flex-col h-full border border-gray-100" data-aos="fade-up" data-aos-delay="0">
+                    <div class="h-48 bg-navy-900 relative overflow-hidden">
+                        <div class="absolute top-4 left-4 bg-navy-900 px-3 py-1 border border-gold-500/30 z-10 shadow-sm">
+                            <span class="text-[0.6rem] font-bold tracking-widest text-gold-500 uppercase">Property Law</span>
                         </div>
+                        <img src="images/picture3.jpg" alt="Property Law" class="w-full h-full object-cover">
                     </div>
-                </details>
+                    <div class="p-6 flex-grow">
+                        <p class="text-xs text-gray-500 mb-3 font-bold tracking-wider uppercase">6 Min Read</p>
+                        <h4 class="text-lg font-serif font-bold text-navy-900 mb-3 leading-snug">Title Due Diligence in West Bengal: What Every Buyer Must Verify</h4>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">From chain-of-title scrutiny to mutation and conversion records — the checks that protect your investment before you sign.</p>
+                    </div>
+                </div>
+
+                <!-- Insight 2 -->
+                <div class="bg-white hover:shadow-xl transition flex flex-col h-full border border-gray-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 bg-burgundy relative overflow-hidden">
+                         <div class="absolute top-4 left-4 bg-burgundy px-3 py-1 border border-gold-500/30 z-10 shadow-sm">
+                            <span class="text-[0.6rem] font-bold tracking-widest text-gold-500 uppercase">Succession</span>
+                        </div>
+                        <img src="images/picture4.jpg" alt="Succession" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <p class="text-xs text-gray-500 mb-3 font-bold tracking-wider uppercase">5 Min Read</p>
+                        <h4 class="text-lg font-serif font-bold text-navy-900 mb-3 leading-snug">Wills, Probate & Succession: Protecting What You Leave Behind</h4>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">A properly drafted will, probate and succession certificates can spare your family years of dispute — the essentials, explained.</p>
+                    </div>
+                </div>
+
+                <!-- Insight 3 -->
+                <div class="bg-white hover:shadow-xl transition flex flex-col h-full border border-gray-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 gradient-overlay relative overflow-hidden">
+                         <div class="absolute top-4 left-4 bg-navy-900/80 px-3 py-1 border border-gold-500/30 z-10 shadow-sm backdrop-blur-sm">
+                            <span class="text-[0.6rem] font-bold tracking-widest text-gold-500 uppercase">Dispute Resolution</span>
+                        </div>
+                        <img src="images/picture5.jpg" alt="Dispute Resolution" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <p class="text-xs text-gray-500 mb-3 font-bold tracking-wider uppercase">4 Min Read</p>
+                        <h4 class="text-lg font-serif font-bold text-navy-900 mb-3 leading-snug">Mediation in India: Resolving Disputes Without the Courtroom</h4>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">A practical look at how structured negotiation and mediation save time, cost and relationships in commercial disputes.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            document.querySelectorAll('.faq-answer p.text-sm.font-bold.text-navy-900.mb-2').forEach(function (paragraph) {
-                const text = paragraph.textContent.trim();
-                const match = text.match(/^(([Qq][0-9]+(?:\.[0-9]+)?)\.)\s*(.*)$/);
-
-                if (match) {
-                    paragraph.innerHTML = '<span class="faq-question-mark">' + match[1] + '</span> ' + match[3];
-                }
-            });
-
-            document.querySelectorAll('.faq-item').forEach(function (item) {
-                item.removeAttribute('open');
-            });
-        });
-    </script>
 
     <!-- Testimonials -->
     <section class="py-16 md:py-24 bg-white text-center">
@@ -980,12 +780,12 @@
                 <p class="text-gray-300 text-sm max-w-2xl mx-auto mb-10">Every matter begins with a conversation. Write to us or call the chambers — we respond to every genuine enquiry.</p>
                 
                 <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16">
-                    <a href="mailto:lexresource@gmail.com" class="bg-gold-500 hover:bg-gold-400 text-navy-900 px-8 py-3 text-sm font-bold tracking-wider transition flex items-center justify-center cursor-pointer">
+                    <a href="mailto:lexresource@gmail.com" class="bg-gold-500 hover:bg-gold-400 text-navy-900 px-8 py-3 text-sm font-bold tracking-wider transition flex items-center justify-center">
                         <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                         CONSULT US
                     </a>
-                    <a href="mailto:lexresource@gmail.com" class="border border-gray-500 hover:border-gold-500 text-white px-8 py-3 text-sm font-bold tracking-wider transition flex items-center justify-center bg-white/5 cursor-pointer">
-                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <a href="tel:+919830270624" class="border border-gray-500 hover:border-gold-500 text-white px-8 py-3 text-sm font-bold tracking-wider transition flex items-center justify-center bg-white/5">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                         +91 98302 70624
                     </a>
                 </div>
@@ -1119,7 +919,7 @@
     <!-- NEW: Floating Action Buttons (FAB) Container -->
     <div class="fab-container">
         <!-- WhatsApp Floating Button -->
-        <a href="https://wa.me/919830270624" target="_blank" rel="noopener noreferrer" class="bg-navy-900 text-gold-500 p-3 rounded-full hover:bg-gold-500 hover:text-navy-900 transition shadow-lg flex items-center justify-center w-12 h-12" aria-label="WhatsApp Us">
+        <a href="https://wa.me/919830270624" target="_blank" rel="noopener noreferrer" class="bg-[#25D366] text-white p-3 rounded-full hover:bg-[#1ebe5b] transition shadow-lg flex items-center justify-center w-12 h-12" aria-label="WhatsApp Us">
             <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.53 0 .2 5.32.2 11.86c0 2.1.55 4.15 1.58 5.96L0 24l6.38-1.67a11.84 11.84 0 0 0 5.68 1.72h.01c6.53 0 11.86-5.32 11.86-11.86 0-3.17-1.23-6.15-3.48-8.38ZM12.06 21.6h-.01a9.83 9.83 0 0 1-5-1.37l-.36-.21-3.79.99 1.01-3.7-.23-.38a9.84 9.84 0 1 1 18.33-5.22 9.84 9.84 0 0 1-9.52 9.89Zm5.4-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.46-.15-.66.15-.2.3-.77.97-.95 1.17-.18.2-.35.22-.65.07-.3-.15-1.27-.47-2.43-1.5-.9-.8-1.5-1.78-1.68-2.08-.18-.3-.02-.46.13-.6.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.52-.07-.15-.66-1.6-.9-2.18-.24-.58-.48-.5-.66-.5h-.57c-.2 0-.52.07-.8.38-.27.3-1.04 1.02-1.04 2.48s1.06 2.87 1.2 3.07c.15.2 2.09 3.18 5.05 4.45.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-.66.24.06.77.36.87.42.1.07.16.12.19.2.03.08.03.57-.27 1.12Z"/></svg>
         </a>
         
@@ -1232,15 +1032,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const acceptBtn = document.getElementById('acceptDisclaimer');
     const body = document.body;
 
-    if (overlay) {
-        overlay.classList.remove('hidden');
-    }
+    // Hamesha show karo jab bhi page load ho
+    overlay.classList.remove('hidden');
     body.classList.add('modal-open');
 
     if (overlay && acceptBtn) {
         acceptBtn.addEventListener('click', function () {
             overlay.classList.add('hidden');
             body.classList.remove('modal-open');
+            // LocalStorage save karne wali line yahan se hata di gayi hai
         });
     }
 });
